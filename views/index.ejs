@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Details</h1>
+    <div>
+      <% rewards.forEach(function(reward) { %>
+        <div class="task-card">
+          <h2><%= reward.name %></h2>
+          <p class="points">Points: <%= reward.points %></p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</body>
+</html>
